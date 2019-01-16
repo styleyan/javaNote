@@ -22,7 +22,8 @@
     <licenses></licenses>
     <!-- 组织信息 -->
     <organization></organization>
-
+    <!-- 自定义一个或多个Maven属性，然后在POM的其他地方使用${属性名}的方式引用该属性 -->
+    <properties></properties>
     <!-- 依赖列表 -->
     <dependencies>
         <!-- 依赖项 -->
@@ -69,7 +70,7 @@
             </plugin>
         </plugins>
     </build>
-    <!-- TODO: ???-->
+    <!-- 继承，和java中的继承相当，作用就是复用 -->
     <parent></parent>
 
     <!-- 用来聚合运行多个 maven 项目 -->
