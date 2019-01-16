@@ -35,7 +35,7 @@
             <!-- 依赖版本  -->
             <version>1</version>
             <type>dd</type>
-            <!-- 依赖范围(test、import...) TODO: 重要 -->
+            <!-- 依赖范围【test、import、provided(只在编译和测试时运行)...】 TODO: 重要 -->
             <scope>import</scope>
             <!-- 设置依赖是否可选(false||true) -->
             <optional>false</optional>
