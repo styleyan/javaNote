@@ -8,6 +8,72 @@
     <artifactId>first.test</artifactId>
     <!-- 版本名 -->
     <version>0.0.1</version>
-    <!-- 打包类型（默认jar包） -->
+    <!-- 打包类型（默认jar包） 其他的有【war、zip、pom】-->
     <packaging></packaging>
+    <!-- 项目描述名，产生文档名用-->
+    <name></name>
+    <!-- 项目地址 -->
+    <url></url>
+    <!-- 项目描述 -->
+    <description></description>
+    <!-- 开发人员列表 -->
+    <developers></developers>
+    <!-- 许可认证 -->
+    <licenses></licenses>
+    <!-- 组织信息 -->
+    <organization></organization>
+
+    <!-- 依赖列表 -->
+    <dependencies>
+        <!-- 依赖项 -->
+        <dependency>
+            <!-- 依赖的 groupId-->
+            <groupId>1</groupId>
+            <!-- 依赖的 artifactId-->
+            <artifactId>d</artifactId>
+            <!-- 依赖版本  -->
+            <version>1</version>
+            <!-- TODO: ??? -->
+            <type>dd</type>
+            <!-- 依赖范围 -->
+            <scope>test</scope>
+            <!-- 设置依赖是否可选(false||true) -->
+            <optional>false</optional>
+            <!-- 排除依赖传递列表 -->
+            <exclusions>
+                <exclusion></exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+    <!-- 依赖的管理（并不会被引用到实际的依赖中，主要用于定义在父模块中，供子模块所继承用，比如多个子模块通用的模块即可定义到该标签中) -->
+    <dependencyManagement>
+        <!-- 依赖列表-->
+        <dependencies>
+            <dependency>
+                <!-- 依赖的 groupId-->
+                <groupId>1</groupId>
+                <!-- 依赖的 artifactId-->
+                <artifactId>1.1</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <!-- 插件列表 -->
+        <plugins>
+            <plugin>
+                <groupId></groupId>
+                <artifactId></artifactId>
+                <version></version>
+            </plugin>
+        </plugins>
+    </build>
+    <!-- TODO: ???-->
+    <parent></parent>
+
+    <!-- 用来聚合运行多个 maven 项目 -->
+    <modules>
+        <module></module>
+    </modules>
 </project>
