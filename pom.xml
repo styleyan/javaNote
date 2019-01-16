@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <!-- 指定了当前pom的版本 -->
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 反写的公司网址+项目名 -->
+    <groupId>com.isyxf.first</groupId>
+    <!-- 项目名 + 模块名 -->
+    <artifactId>first.test</artifactId>
+    <!-- 版本名 -->
+    <version>0.0.1</version>
+    <!-- 打包类型 -->
+    <packaging></packaging>
+</project>
