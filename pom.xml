@@ -8,6 +8,6 @@
     <artifactId>first.test</artifactId>
     <!-- 版本名 -->
     <version>0.0.1</version>
-    <!-- 打包类型 -->
+    <!-- 打包类型（默认jar包） -->
     <packaging></packaging>
 </project>
