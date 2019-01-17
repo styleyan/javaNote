@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/pom/first.test.iml" filepath="$PROJECT_DIR$/pom/first.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maven/first.test.iml" filepath="$PROJECT_DIR$/maven/first.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/javaNote.iml" filepath="$PROJECT_DIR$/.idea/javaNote.iml" />
     </modules>
   </component>
