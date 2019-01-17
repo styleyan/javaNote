@@ -76,4 +76,22 @@
     <modules>
         <module></module>
     </modules>
+
+    <!-- 配置idea maven 启动命令-->
+    <profiles>
+        <profile>
+            <!-- 命令名称 -->
+            <id>dev</id>
+            <properties>
+                <environment.dir>build/</environment.dir>
+                <environment>dev</environment>
+            </properties>
+            <activation>
+                <os>
+                    <family>unix</family>
+                </os>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 </project>
