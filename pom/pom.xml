@@ -77,7 +77,7 @@
         <module></module>
     </modules>
 
-    <!-- 配置idea maven 启动命令-->
+    <!-- 配置idea maven 启动命令，TODO:重要 -->
     <profiles>
         <profile>
             <!-- 命令名称 -->
