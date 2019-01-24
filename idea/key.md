@@ -6,3 +6,4 @@
 > ctrl + k （git commit）<br>
 > ctrl + shift + k （git push提交）<br>
 > ctrl + . (展开/收起代码块)<br>
+> ctrl + shift + t (选中类快速创建单元测试)
