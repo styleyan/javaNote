@@ -6,5 +6,5 @@
 > ctrl + k （git commit）<br>
 > ctrl + shift + k （git push提交）<br>
 > ctrl + . (展开/收起代码块)<br>
-> command + ,逗号 (mac 打开【设置】快捷键)<br>
+> command + ,逗号 (mac 打开【设置】快捷键，window ctrl + alt + s)<br>
 > ctrl + shift + t (选中类快速创建单元测试)
