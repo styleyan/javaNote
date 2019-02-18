@@ -20,7 +20,5 @@ public class MyObject {
 
     public static void print2() {
         System.out.println(str1);
-        System.out.println(str4);
-        print1();
     }
 }
