@@ -1,18 +1,30 @@
-package com.isyxf.test.classObject;
+package com.isyxf.test.cls;
 
-public class One extends Two implements Inters {
-
-    static String st = "常来";
+/**
+ * Demo class
+ *
+ * @author keriezhang
+ * @date 2016/10/31
+ */
+public class One extends AbstractTwo implements Inters {
 
     private String a = "";
 
-    private Integer n = 22;
+    One() {
+        super("ddd");
+    }
+
+    One(String cc) {
+        System.out.println(cc);
+    }
+
     public String cc() {
+        super.ccc("dddd");
         System.out.println("cccc===========eeeee");
         return "test";
     }
 
-    public String getA() {
+    public String getA()  {
         return a;
     }
 
@@ -43,5 +55,9 @@ public class One extends Two implements Inters {
     @Override
     void sayName() {
 
+    }
+
+    @Override
+    void ccc(String ccc) {
     }
 }

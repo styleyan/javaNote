@@ -1,4 +1,4 @@
-package com.isyxf.test.classObject;
+package com.isyxf.test.cls;
 
 public class run extends One {
 
