@@ -46,8 +46,4 @@ public class Pair<T> {
     static void aaa(String a, String b) {
         return;
     }
-
-    static <K> Pair<K> aaa(K aaa) {
-        return;
-    }
 }
