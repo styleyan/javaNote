@@ -1,13 +1,15 @@
 package com.isyxf.test;
 
-import com.isyxf.test.tmp.TmpTest;
-
-import java.util.Date;
-
 public class Main {
     public static void main(String[] args) {
-        TmpTest tmpTest = new TmpTest();
+        String str = "asdf";
+        String str2 = "eeasedf";
+        String aa = null;
 
-        System.out.println(tmpTest.toString());
+        if (str2.equals(str2)) {
+            System.out.println("包含该字符");
+        }
+
+        System.out.println(str == str2);
     }
 }

@@ -3,7 +3,7 @@
 > shift * 2            ( 查找文件或 class )<br>
 > command + {  (后退编辑处)
 > command + }  (前进编辑处)
-> command + n  (调用 generate 面板，get/set )
+> command + n  (调用 generate 面板，get/set、 重写当前类所有(包括继承)的方法 )
 > option + command + l (格式化代码)
 
 
