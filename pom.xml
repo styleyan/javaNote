@@ -14,6 +14,7 @@
             <version>4.10</version>
         </dependency>
 
+        <!-- srping 4大核心包 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -39,6 +40,7 @@
             <artifactId>commons-logging</artifactId>
             <version>1.2</version>
         </dependency>
+        <!--日志 -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>

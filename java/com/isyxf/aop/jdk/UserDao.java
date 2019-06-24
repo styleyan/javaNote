@@ -1,4 +1,4 @@
-package com.isyf.aop;
+package com.isyxf.aop.jdk;
 
 public interface UserDao {
     public void save();
