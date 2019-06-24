@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
-    <!-- Bean的实例化的三种方式 -->
-    <!-- 第一种:无参构造 -->
-    <bean id="bean1" class="com.isyxf.ioc.demo2.Bean1">
-        <property name="name" value="33333"></property>
-        <constructor-arg name="num" value="233"></constructor-arg>
-        <property name="cat" ref="cat"></property>
-    </bean>
-    <bean id="cat" class="com.isyxf.ioc.demo2.Cat">
-        <property name="name" value="kitty">
-
-        </property>
-        <property name="size" value="12"></property>
-    </bean>
+    <context:component-scan base-package="com.isyxf.ioc"/>
 </beans>
