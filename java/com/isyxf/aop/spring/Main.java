@@ -11,15 +11,17 @@ import javax.annotation.Resource;
 @ContextConfiguration("classpath:applicationContext.xml")
 public class Main {
 
-    /** 增强(studentDaoProxy)、没有增强(studentDao), 查看 applicationContext.xml 文件 **/
-    @Resource(name = "studentDaoProxy")
-    private StudentDao studentDao;
+    /**
+     * customerDao: 原始, customerDaoProxy: 代理对象
+     */
+    @Resource(name = "customerDaoProxy")
+    private CustomerDao customerDao;
 
     @Test
     public void demo1() {
-        studentDao.find();
-        studentDao.save();
-        studentDao.update();
-        studentDao.delete();
+        customerDao.find();
+        customerDao.delete();
+        customerDao.update();
+        customerDao.save();
     }
 }
