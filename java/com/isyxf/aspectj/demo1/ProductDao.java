@@ -8,12 +8,15 @@ public class ProductDao {
         System.out.println("保存商品...");
     }
 
-    public void update() {
+    public String update() {
         System.out.println("更新商品...");
+
+        return "update";
     }
 
-    public void delete() {
+    public int delete() {
         System.out.println("删除...");
+        return 233;
     }
 
     public void findOne() {

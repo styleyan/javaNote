@@ -15,7 +15,8 @@ public class Main {
 
     @Test
     public void start() {
-        productDao.delete();
+        Object result = productDao.delete();
+        System.out.println("result: " + result);
         productDao.findAll();
         productDao.findOne();
         productDao.save();
