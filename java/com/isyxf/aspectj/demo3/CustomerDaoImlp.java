@@ -2,8 +2,9 @@ package com.isyxf.aspectj.demo3;
 
 public class CustomerDaoImlp implements CustomerDao {
     @Override
-    public void save() {
+    public String save() {
         System.out.println("保存客户");
+        return "this is test";
     }
 
     @Override

@@ -20,6 +20,9 @@
         <!-- 配置AOP的切面-->
         <aop:aspect ref="myAspectjXml">
             <aop:before method="beforeHandle" pointcut-ref="pointcut1"/>
+            <aop:after-returning method="afterRuningHandle" pointcut-ref="pointcut1" returning="result"/>
+            <aop:around method="aroundRuningHandle" pointcut-ref="pointcut1"/>
         </aop:aspect>
+        <!---->
     </aop:config>
 </beans>
