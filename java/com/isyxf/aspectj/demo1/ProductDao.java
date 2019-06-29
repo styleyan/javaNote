@@ -21,9 +21,11 @@ public class ProductDao {
 
     public void findOne() {
         System.out.println("查询一个...");
+        // int i = 1/0;
     }
 
     public void findAll() {
         System.out.println("查询所有...");
+        int i = 1/0;
     }
 }

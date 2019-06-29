@@ -17,9 +17,9 @@ public class Main {
     public void start() {
         Object result = productDao.delete();
         System.out.println("result: " + result);
-        productDao.findAll();
         productDao.findOne();
         productDao.save();
         productDao.update();
+        productDao.findAll();
     }
 }
