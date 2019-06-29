@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!-- beans 通过 https://docs.spring.io/spring/docs/4.2.4.RELEASE/spring-framework-reference/htmlsingle/#xsd-config-body-schemas-aop 获得-->
+    <!--开启AspectJ的注解开发，自动代理-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+    <!-- 目标类 -->
+    <bean id="productDao" class="com.isyxf.aspectj.demo2.ProductDao"/>
+
+    <!-- 定义切面类 -->
+    <bean class="com.isyxf.aspectj.demo2.MyAspectAnno"/>
+</beans>
