@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 配置目标类 -->
+    <bean id="customerDao" class="com.isyxf.aspectj.demo3.CustomerDaoImlp"/>
+
+
+
+    <!-- 配置切面类 -->
+    <bean id="myAspectjXml" class="com.isyxf.aspectj.demo3.MyAspectjXml"/>
+
+    <!-- aop的相关配置 -->
+    <aop:config>
+        <!--配置切入点-->
+        <aop:pointcut id="pointcut1" expression="execution(* com.isyxf.aspectj.demo3.CustomerDao.save(..))"/>
+        <!-- 配置AOP的切面-->
+        <aop:aspect ref="myAspectjXml">
+            <aop:before method="beforeHandle" pointcut-ref="pointcut1"/>
+        </aop:aspect>
+    </aop:config>
+</beans>
