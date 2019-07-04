@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- TODO: 需要引入 xmlns:p="http://www.springframework.org/schema/p" 配置-->
+
+    <!-- 使用 p 命名控制注入-->
+    <bean id="person" class="com.isyxf.ioc.demo8.Person" p:name="yxf" p:age="11" p:cat-ref="cat"/>
+    <!-- 猫对象 -->
+    <bean id="cat" class="com.isyxf.ioc.demo8.Cat" p:name="小黄"/>
+</beans>
