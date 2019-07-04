@@ -4,6 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="user" class="com.isyxf.ioc.demo6.User">
+        <!-- 使用 constructor-arg 注入属性，需要构造方法初始化带有相关参数-->
         <constructor-arg name="age" value="23"/>
         <constructor-arg name="name" value="yxf"/>
     </bean>

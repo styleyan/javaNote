@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="person" class="com.isyxf.ioc.demo7.Person">
+        <!-- TODO: 使用 property 类的属性需要设置 get/set方法-->
+        <property name="name" value="fffff"/>
+        <property name="age" value="233"/>
+        <!-- TODO: ref 用于引入其他 bean 的ID或name -->
+        <property name="cat" ref="cat"/>
+    </bean>
+
+    <!-- 猫对象 -->
+    <bean id="cat" class="com.isyxf.ioc.demo7.Cat">
+        <property name="name" value="kitty"/>
+    </bean>
+</beans>
