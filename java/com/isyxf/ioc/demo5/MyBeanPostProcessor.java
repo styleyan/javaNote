@@ -30,7 +30,9 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
                 String METHOD = "insert";
                 if (METHOD.equals(method.getName())) {
                     System.out.println("权限校验============");
-                    return method.invoke(bean, args);
+                    // invoke: 引用, TODO: 这东西像 JS 的 function.bind() 方法啊!
+                    Object o = method.invoke(bean, args);
+                    return o;
                 }
                 return method.invoke(bean, args);
             }
