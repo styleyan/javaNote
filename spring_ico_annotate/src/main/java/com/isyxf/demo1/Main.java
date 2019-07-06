@@ -1,4 +1,4 @@
-package com.isyxf.spring_ioc_annotate;
+package com.isyxf.demo1;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
