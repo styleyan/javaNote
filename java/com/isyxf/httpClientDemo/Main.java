@@ -13,7 +13,7 @@ public class Main {
 
         JSONObject jsonObject = test.getPrxyInfo();
 
-        String result = test.sendProxy(jsonObject, "", "http://127.0.0.1:8080//api/remarkableWriting/add");
+        String result = test.sendProxy(jsonObject, "", "http://127.0.0.1:8080/api/remarkableWriting/add");
 
         System.out.println(result);
 
