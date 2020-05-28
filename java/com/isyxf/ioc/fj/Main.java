@@ -8,5 +8,8 @@ public class Main {
         Person person = new Person();
         person.setAccountInfo("yxf_");
         System.out.println(JSON.toJSONString(person));
+
+        person.getClass();
+        person.getClass().getClass();
     }
 }
